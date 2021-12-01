@@ -1,0 +1,18 @@
+digraph G { 
+"i0:PLIO(24)\ncol:24,ch:0"[shape=box, style=filled, fillcolor=lightgrey]; 
+"i1:PLIO(25)\ncol:25,ch:0"[shape=box, style=filled, fillcolor=lightgrey]; 
+"i2:n2n_trans1\n CR(24,0)"[style=filled, fillcolor=aquamarine]; 
+"i2_pi0_DMA\nS2MM(0)"[shape=box, style=filled, fillcolor=lightgrey]; 
+"i3:n2n_trans2\n CR(25,0)"[style=filled, fillcolor=coral]; 
+"i3_po0_DMA\nMM2S(0)"[shape=box, style=filled, fillcolor=lightgrey]; 
+"ps_i4:PS\nps_main"[shape=box, style=filled, fillcolor=snow]; 
+"i0:PLIO(24)\ncol:24,ch:0"->"i2_pi0_DMA\nS2MM(0)"[label=" Stream"];
+"i2_pi0_DMA\nS2MM(0)"->"i2:n2n_trans1\n CR(24,0)"[label="buf0\n[MG(24,1):0]"];
+"i2_pi0_DMA\nS2MM(0)"->"i2:n2n_trans1\n CR(24,0)"[label="buf0d\n[MG(24,1):1]"];
+"i2:n2n_trans1\n CR(24,0)"->"i3:n2n_trans2\n CR(25,0)"[label="buf1\n[MG(24,0):0]"];
+"i2:n2n_trans1\n CR(24,0)"->"i3:n2n_trans2\n CR(25,0)"[label="buf1d\n[MG(24,0):2]"];
+"i3:n2n_trans2\n CR(25,0)"->"i3_po0_DMA\nMM2S(0)"[label="buf2\n[MG(25,0):2]"];
+"i3:n2n_trans2\n CR(25,0)"->"i3_po0_DMA\nMM2S(0)"[label="buf2d\n[MG(25,0):0]"];
+"i3_po0_DMA\nMM2S(0)" -> "i1:PLIO(25)\ncol:25,ch:0"[label=" Stream"];
+
+ }

@@ -1,0 +1,81 @@
+{
+    "SimulationConfig": {
+        "device_json": {
+            "directory": "data/devices",
+            "file": "VC1902.json"
+        },
+        "phy_device_file": "xcvc1902-vsva2197-2MP-e-S",
+        "aie_freq": 1000000000.0,
+        "use_real_noc": 1,
+        "noc_ip_block": {
+            "lib_path": "./Work/noc/liblnoc_tlm.so",
+            "traffic_file": "./Work/noc/noc_traffic.nts",
+            "config_file": "./Work/noc/noc_soln.ncr"
+        },
+        "pl_ip_block": [
+            {
+                "name": "i0",
+                "arguments": [
+                    "data/input0.txt",
+                    "16",
+                    "32",
+                    "1",
+                    "0",
+                    "0"
+                ],
+                "ip": "release",
+                "lib_path": "data/pl_fileio/libpl_sender.so",
+                "pl_freq": 312500000.0,
+                "axi_stream": [
+                    {
+                        "port_name": "do",
+                        "column": 24,
+                        "stream_id": 0,
+                        "direction": "pl_to_me",
+                        "bus_width": 32
+                    }
+                ],
+                "event_bus": []
+            },
+            {
+                "name": "i1",
+                "arguments": [
+                    "data/output.txt",
+                    "16",
+                    "32",
+                    "1",
+                    "0",
+                    "0"
+                ],
+                "ip": "release",
+                "lib_path": "data/pl_fileio/libpl_receiver.so",
+                "pl_freq": 312500000.0,
+                "axi_stream": [
+                    {
+                        "port_name": "di",
+                        "column": 25,
+                        "stream_id": 0,
+                        "direction": "me_to_pl",
+                        "bus_width": 32
+                    }
+                ],
+                "event_bus": []
+            },
+            {
+                "name": "ps_i4_ps_main",
+                "ip": "ps",
+                "lib_path": "ps/c_rts/systemC/generated-objects/ps_i4.so",
+                "pl_freq": 312500000.0,
+                "axi_mm": [
+                    {
+                        "port_name": "ps_axi",
+                        "direction": "ps_to_gm",
+                        "noc_endpoint": "NOC_NMU128_X0Y5",
+                        "bus_width": 0
+                    }
+                ],
+                "event_bus": []
+            }
+        ]
+    }
+}

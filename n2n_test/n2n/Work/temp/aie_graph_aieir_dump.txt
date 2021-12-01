@@ -1,0 +1,70 @@
+Module {
+   def subgraph root {
+      node definitions {
+         def plio b0 iotype:stream to stream {
+             ports {
+               port po0 dir:out porttype:stream elttype:strm<int16>
+            }
+         }
+         def plio b1 iotype:stream to stream {
+             ports {
+               port pi0 dir:in porttype:stream elttype:strm<int16>
+            }
+         }
+         def aiekernel b2 {
+            ports {
+               port pi0 dir:in porttype:memvariable name: matA elttype:wndo<int16>
+               port po0 dir:out porttype:memvariable name: matB elttype:wndo<int16>
+            }
+            kernel: n2n_trans1
+            srcs:{
+               n2n_trans1.cc
+            }
+         }
+         def aiekernel b3 {
+            ports {
+               port pi0 dir:in porttype:memvariable name: matB elttype:wndo<int16>
+               port po0 dir:out porttype:memvariable name: matC elttype:wndo<int16>
+            }
+            kernel: n2n_trans2
+            srcs:{
+               n2n_trans2.cc
+            }
+         }
+         def plkernel ps_b4 {
+            ports {
+            }
+            impl_type: unknown
+            shared_lib: 
+            systemc_lib: 
+         }
+      }
+      nodes: {
+         plio  nodeinst:i0:b0 {
+            portinst: i0_po0 idx[-1] datatype:strm<int16> stream out bw_utlization = 1 (variable name:  platform.src[0])
+         }
+         plio  nodeinst:i1:b1 {
+            portinst: i1_pi0 idx[-1] datatype:strm<int16> stream in bw_utlization = 1 (variable name:  platform.sink[0])
+         }
+         me  i2:b2 runtime:0.6 {
+            portinst: i2_pi0 idx[0] datatype:wndo<int16> mem in blocksize:6144 max_blocksize:6144 bw_utlization = 1 (variable name:  trans1.in[0])
+            portinst: i2_po0 idx[1] datatype:wndo<int16> mem out blocksize:6144 max_blocksize:6144 bw_utlization = 1 (variable name:  trans1.out[0])
+         }
+         me  i3:b3 runtime:0.6 {
+            portinst: i3_pi0 idx[0] datatype:wndo<int16> mem in blocksize:6144 max_blocksize:6144 bw_utlization = 1 (variable name:  trans2.in[0])
+            portinst: i3_po0 idx[1] datatype:wndo<int16> mem out blocksize:6144 max_blocksize:6144 bw_utlization = 1 (variable name:  trans2.out[0])
+         }
+         pl  nodeinst:ps_i4:ps_b4 {
+         }
+      }
+      connections:{
+         Channel net0: Single :src:i0_po0 dst:i2_pi0
+         Channel net1: Single :src:i2_po0 dst:i3_pi0
+         Channel net2: Single :src:i3_po0 dst:i1_pi0
+      }
+      constraints {
+      }
+   }
+   graph alternatives {
+   }
+}

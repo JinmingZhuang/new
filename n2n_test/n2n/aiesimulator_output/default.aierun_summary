@@ -1,0 +1,353 @@
+<ENTRY>
+{
+ "thisFile": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/default.aierun_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:41:33 2021",
+ "timestampMillis": "1638222093713",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/Work",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "AIE_COMPILER_WORKDIR",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Nov 29 13:41:33 2021",
+ "timestampMillis": "1638222093714",
+ "buildStep": {
+  "cmdId": "e889de5c-cb8b-40be-81dc-c009b4c27a4f",
+  "name": "aiesim",
+  "logFile": "/home/Jinming/research/aie_project/n2n/aiesimulator.log",
+  "commandLine": "aiesimulator --pkg-dir=./Work --dump-vcd foo --profile ",
+  "args": [
+   "aiesimulator",
+   "--pkg-dir=./Work",
+   "--dump-vcd foo",
+   "--profile"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/Jinming/research/aie_project/n2n"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 29 13:41:33 2021",
+ "timestampMillis": "1638222093715",
+ "status": {
+  "cmdId": "e889de5c-cb8b-40be-81dc-c009b4c27a4f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Nov 29 13:41:33 2021",
+ "timestampMillis": "1638222093731",
+ "buildSummary": {
+  "hardwarePlatform": "xcvc1902-vsva2197-2MP-e-S",
+  "hardwareDsa": "VC1902",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_AIESIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "/home/Jinming/research/aie_project/n2n/Work/temp/aie_graph.json",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/Jinming/research/aie_project/n2n/aie/aie_graph.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "AIE",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2021.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:41:33 2021",
+ "timestampMillis": "1638222093756",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/foo.vcd",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VARIABLE_CHANGE_DUMP",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166557",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_funct_25_0.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "AIE_FUNCT_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166558",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_funct_24_1.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "AIE_FUNCT_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166559",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_instr_24_0.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "AIE_INSTR_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166559",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_instr_24_1.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "AIE_INSTR_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166559",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_instr_24_1.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "AIE_INSTR_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166560",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_funct_25_1.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "AIE_FUNCT_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166560",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_instr_25_0.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "AIE_INSTR_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166561",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_funct_25_1.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "AIE_FUNCT_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166561",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_funct_24_0.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "AIE_FUNCT_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166561",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_funct_24_0.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "AIE_FUNCT_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166562",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_instr_25_1.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "AIE_INSTR_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166562",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_instr_24_0.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "AIE_INSTR_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166562",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_instr_25_1.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "AIE_INSTR_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166563",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_funct_24_1.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "AIE_FUNCT_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166563",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_instr_25_0.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "AIE_INSTR_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166563",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/profile_funct_25_0.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "AIE_FUNCT_PROFILE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166564",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n/aiesimulator_output/data/output.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "SIMULATOR_OUTPUT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 29 13:42:46 2021",
+ "timestampMillis": "1638222166564",
+ "status": {
+  "cmdId": "e889de5c-cb8b-40be-81dc-c009b4c27a4f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

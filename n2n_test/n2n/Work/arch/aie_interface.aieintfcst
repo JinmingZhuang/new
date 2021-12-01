@@ -1,0 +1,18 @@
+{
+    "Placement": [
+        {
+            "LogicalInstance": "DataIn0",
+            "PhysicalInstance": [
+                "AIE_PL_X23Y0_AIE_PL_S_AXIS_0"
+            ],
+            "IsSoft": false
+        },
+        {
+            "LogicalInstance": "DataOut",
+            "PhysicalInstance": [
+                "AIE_PL_X24Y0_AIE_PL_M_AXIS_0"
+            ],
+            "IsSoft": false
+        }
+    ]
+}

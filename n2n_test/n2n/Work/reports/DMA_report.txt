@@ -1,0 +1,12 @@
+DMA Analysis Report 
+
+DMA Report: S2MM
+portinst: i2_pi0 idx[0] datatype:wndo<int16> mem in blocksize:6144 max_blocksize:6144 bw_utlization = 1 (variable name:  trans1.in[0])
+ MG(24,1) : channel=0, startBD=0, lockID=0, name=buf0
+ MG(24,1) : channel=0, startBD=1, lockID=1, name=buf0d
+
+DMA Report: MM2S
+portinst: i3_po0 idx[1] datatype:wndo<int16> mem out blocksize:6144 max_blocksize:6144 bw_utlization = 1 (variable name:  trans2.out[0])
+ MG(25,0) : channel=0, startBD=0, lockID=0, name=buf2
+ MG(25,0) : channel=0, startBD=1, lockID=1, name=buf2d
+

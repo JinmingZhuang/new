@@ -1,0 +1,306 @@
+<ENTRY>
+{
+ "thisFile": "/home/Jinming/research/aie_project/n2n_test/n2n_stream/Work/aie_graph.aiecompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Nov 29 14:16:33 2021",
+ "timestampMillis": "1638224193571",
+ "buildStep": {
+  "cmdId": "0bc80a7d-4be3-40d5-9753-79167703dd21",
+  "name": "aiecompiler",
+  "logFile": "/home/Jinming/research/aie_project/n2n_test/n2n_stream/AIECompiler.log",
+  "commandLine": "/opt/tools/xilinx/Vitis/2021.1/aietools/bin/unwrapped/lnx64.o/aiecompiler -platform=/opt/xilinx/platforms/xilinx_vck190_base_202110_1/xilinx_vck190_base_202110_1.xpfm -include=./aie -workdir=./Work -v aie/aie_graph.cpp ",
+  "args": [
+   "/opt/tools/xilinx/Vitis/2021.1/aietools/bin/unwrapped/lnx64.o/aiecompiler",
+   "-platform=/opt/xilinx/platforms/xilinx_vck190_base_202110_1/xilinx_vck190_base_202110_1.xpfm",
+   "-include=./aie",
+   "-workdir=./Work",
+   "-v",
+   "aie/aie_graph.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/Jinming/research/aie_project/n2n_test/n2n_stream"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 29 14:16:33 2021",
+ "timestampMillis": "1638224193571",
+ "status": {
+  "cmdId": "0bc80a7d-4be3-40d5-9753-79167703dd21",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Nov 29 14:16:33 2021",
+ "timestampMillis": "1638224193572",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_UNKNOWN",
+  "target": "TT_UNKNOWN",
+  "kernels": [],
+  "toolVersion": "Vitis AI Engine Compiler Release 2021.1. SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 14:16:33 2021",
+ "timestampMillis": "1638224193574",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n_test/n2n_stream/Work",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "AIE_COMPILER_WORKDIR",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 14:16:33 2021",
+ "timestampMillis": "1638224193574",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n_test/n2n_stream/Work/reports/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 14:16:33 2021",
+ "timestampMillis": "1638224193574",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n_test/n2n_stream/Work/reports/guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Nov 29 14:16:39 2021",
+ "timestampMillis": "1638224199004",
+ "buildStep": {
+  "cmdId": "634a8060-e22d-4c26-98a4-32328a5bf212",
+  "name": "aieir_be",
+  "logFile": "",
+  "commandLine": "/opt/tools/xilinx/Vitis/2021.1/aietools/bin/unwrapped/lnx64.o/aieir_be --time-passes=0 --disable-om-fifo-insertion=false --trace-plio-width=64 --pl-freq=0 --use-real-noc=true --show-loggers=false --fast-nonlinearfloats=false --broadcast-enable-core=false --high-performance=false --kernel-address-location=false --target=hw --swfifo-threshold=40 --single-mm2s-channel=false --workdir=./Work --exit-after=complete --event-trace-config= --test-iterations=-1 --stacksize=1024 --platform=/opt/xilinx/platforms/xilinx_vck190_base_202110_1/xilinx_vck190_base_202110_1.xpfm --event-trace-custom-config= --disable-dma-cmd-alignment=false --enable-ecc-scrubbing=true --resource-manager=true --write-partitioned-file=true --schemafile=AIEGraphSchema.json --include=./aie --verify-switchconfig=true --device= --disable-multirate-analysis=false --fastmath=false --event-trace-advanced-mapping=0 --compute-heapsize=true --log-level=1 --enable-reconfig=false --aiesim-xrt-api=false --gen-graph-cleanup=false --use-canonical-net-names=false --event-trace-port=plio --use-phy-shim=true --xlopt=1 --pc-src-mapping=false --pre-compile-kernels=false --trace-aiesim-option=0 --aiearch=aie --mapped-soln-udm= --optimize-pktids=false --no-init=false --num-trace-streams=16 --aie-heat-map=false --phydevice= --fast-floats=false --exec-timed=0 --pl-auto-restart=false --routed-soln-udm= --large-kernel-program=false --enable-profiling=false --disable-transform-merge-broadcast=false --verbose=true --use-async-rtp-locks=true --repo-path= --genArchive=false --pl-axi-lite=false --event-trace-bounding-box= --logcfg-file= --enable-reconfig-dma-autostart=false --heapsize=1024 --logical-arch= --nodot-graph=false --shim-constraints= --disable-dma-autostart=false --disable-transform-broadcast-split=true -json ./Work/temp/aie_graph.json -sdf-graph aie/aie_graph.cpp ",
+  "args": [
+   "/opt/tools/xilinx/Vitis/2021.1/aietools/bin/unwrapped/lnx64.o/aieir_be",
+   "--time-passes=0",
+   "--disable-om-fifo-insertion=false",
+   "--trace-plio-width=64",
+   "--pl-freq=0",
+   "--use-real-noc=true",
+   "--show-loggers=false",
+   "--fast-nonlinearfloats=false",
+   "--broadcast-enable-core=false",
+   "--high-performance=false",
+   "--kernel-address-location=false",
+   "--target=hw",
+   "--swfifo-threshold=40",
+   "--single-mm2s-channel=false",
+   "--workdir=./Work",
+   "--exit-after=complete",
+   "--event-trace-config=",
+   "--test-iterations=-1",
+   "--stacksize=1024",
+   "--platform=/opt/xilinx/platforms/xilinx_vck190_base_202110_1/xilinx_vck190_base_202110_1.xpfm",
+   "--event-trace-custom-config=",
+   "--disable-dma-cmd-alignment=false",
+   "--enable-ecc-scrubbing=true",
+   "--resource-manager=true",
+   "--write-partitioned-file=true",
+   "--schemafile=AIEGraphSchema.json",
+   "--include=./aie",
+   "--verify-switchconfig=true",
+   "--device=",
+   "--disable-multirate-analysis=false",
+   "--fastmath=false",
+   "--event-trace-advanced-mapping=0",
+   "--compute-heapsize=true",
+   "--log-level=1",
+   "--enable-reconfig=false",
+   "--aiesim-xrt-api=false",
+   "--gen-graph-cleanup=false",
+   "--use-canonical-net-names=false",
+   "--event-trace-port=plio",
+   "--use-phy-shim=true",
+   "--xlopt=1",
+   "--pc-src-mapping=false",
+   "--pre-compile-kernels=false",
+   "--trace-aiesim-option=0",
+   "--aiearch=aie",
+   "--mapped-soln-udm=",
+   "--optimize-pktids=false",
+   "--no-init=false",
+   "--num-trace-streams=16",
+   "--aie-heat-map=false",
+   "--phydevice=",
+   "--fast-floats=false",
+   "--exec-timed=0",
+   "--pl-auto-restart=false",
+   "--routed-soln-udm=",
+   "--large-kernel-program=false",
+   "--enable-profiling=false",
+   "--disable-transform-merge-broadcast=false",
+   "--verbose=true",
+   "--use-async-rtp-locks=true",
+   "--repo-path=",
+   "--genArchive=false",
+   "--pl-axi-lite=false",
+   "--event-trace-bounding-box=",
+   "--logcfg-file=",
+   "--enable-reconfig-dma-autostart=false",
+   "--heapsize=1024",
+   "--logical-arch=",
+   "--nodot-graph=false",
+   "--shim-constraints=",
+   "--disable-dma-autostart=false",
+   "--disable-transform-broadcast-split=true",
+   "-json",
+   "./Work/temp/aie_graph.json",
+   "-sdf-graph",
+   "aie/aie_graph.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/Jinming/research/aie_project/n2n_test/n2n_stream"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 29 14:16:39 2021",
+ "timestampMillis": "1638224199006",
+ "status": {
+  "cmdId": "634a8060-e22d-4c26-98a4-32328a5bf212",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 14:16:41 2021",
+ "timestampMillis": "1638224201644",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n_test/n2n_stream/Work",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "AIE_COMPILER_WORKDIR",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Nov 29 14:16:42 2021",
+ "timestampMillis": "1638224202504",
+ "buildSummary": {
+  "hardwarePlatform": "xcvc1902-vsva2197-2MP-e-S",
+  "hardwareDsa": "VC1902",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "/home/Jinming/research/aie_project/n2n_test/n2n_stream/Work/temp/aie_graph.json",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/Jinming/research/aie_project/n2n_test/n2n_stream/aie/aie_graph.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "AIE",
+    "frequency": 1000,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 14:16:48 2021",
+ "timestampMillis": "1638224208983",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n_test/n2n_stream/Work/temp/debug_config.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "AIE_DEBUG_CONFIG",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 14:16:48 2021",
+ "timestampMillis": "1638224208984",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n_test/n2n_stream/Work/temp/aie_graph.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "AIE_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 29 14:16:54 2021",
+ "timestampMillis": "1638224214627",
+ "status": {
+  "cmdId": "634a8060-e22d-4c26-98a4-32328a5bf212",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 29 14:16:55 2021",
+ "timestampMillis": "1638224215281",
+ "status": {
+  "cmdId": "0bc80a7d-4be3-40d5-9753-79167703dd21",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>

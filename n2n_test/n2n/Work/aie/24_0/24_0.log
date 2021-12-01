@@ -1,0 +1,1227 @@
+Release: ASIP Programmer R-2020.09-TGT-210520
+Tool: chessmk version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Configuration: Release_LLVM
+Compiling "24_0.ll"
+chess-clang --chess-verbose -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib --chess-proc-dir=/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib -S -nostdlibinc -D__chess__ -D__tct_release__=2009 -g -I/opt/tools/xilinx/Vitis/2021.1/aietools/include -I./aie -I/home/Jinming/research/aie_project/n2n/. -I/home/Jinming/research/aie_project/n2n/./aie -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/include -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libs/libcxx-9.0.0/include-lite -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/include -D__AIENGINE__ -D__AIEARCH__=1 -DDEPLOYMENT_ELF=1 -O2 -include aie_core.h -std=c++2a -fno-builtin-memcpy -mllvm -disable-lsr -mllvm -replexitval=never -mllvm -enable-load-pre=false -mllvm -chess-disable-add-to-or -mllvm -chess-combine-gep-indices=none -mllvm -chess-disable-fold-phi-of-loads -mllvm -chess-aainfo2chains-algo=4 -mllvm -chess-aggressive-aainfo=false -mllvm -chess-enable-indvarsimplify=0 -fchess-register-c++-static-destructors-as-global-dtors -Werror=return-type -mllvm -chess-disable-cse-across-loopboundary -mllvm -chess-tbaa-detect-common-underlying-object=true -mllvm -chess-protect-llvm-global-reg-access=true -mllvm -chess-enable-c-pragma-protect -fno-jump-tables -fno-discard-value-names -mllvm -chess-collapse-struct-types-during-linking=0 ../../ir/24_0.ll -o../Release/chesswork/24_0.sfg --chess-proc-name=me
+chess-clang: warning: argument unused during compilation: '-I /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib' [-Wunused-command-line-argument]
+chess-clang: warning: argument unused during compilation: '-I /opt/tools/xilinx/Vitis/2021.1/aietools/include' [-Wunused-command-line-argument]
+chess-clang: warning: argument unused during compilation: '-I ./aie' [-Wunused-command-line-argument]
+chess-clang: warning: argument unused during compilation: '-I /home/Jinming/research/aie_project/n2n/.' [-Wunused-command-line-argument]
+chess-clang: warning: argument unused during compilation: '-I /home/Jinming/research/aie_project/n2n/./aie' [-Wunused-command-line-argument]
+chess-clang: warning: argument unused during compilation: '-I /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/include' [-Wunused-command-line-argument]
+chess-clang: warning: argument unused during compilation: '-I /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libs/libcxx-9.0.0/include-lite' [-Wunused-command-line-argument]
+chess-clang: warning: argument unused during compilation: '-I /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/include' [-Wunused-command-line-argument]
+chess-clang: warning: argument unused during compilation: '-include aie_core.h' [-Wunused-command-line-argument]
+Release: ipp R-2020.09-TGT-210520 
+Tool: chess-clang version R-2020.09#8ae012ed2b#210514
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading processor configuration from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_llvm.cfg
+
+
+chess-clang user time   =    0.04 s  /     0.03 s 	24_0
+chess-clang system time =    0.00 s  /     0.00 s 	24_0
+chess-clang real time   =    0.05 s  /     0.04 s 	24_0
+
+noodle -v -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg -I/opt/tools/xilinx/Vitis/2021.1/aietools/include -I./aie -I/home/Jinming/research/aie_project/n2n/. -I/home/Jinming/research/aie_project/n2n/./aie -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/include -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libs/libcxx-9.0.0/include-lite -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/include -D__AIENGINE__ -D__AIEARCH__=1 -DDEPLOYMENT_ELF=1 +Oitm -iaie_core.h +Sinl +Olbb=200 +Opmsa +Olzyinl +w../Release/chesswork ../Release/chesswork/24_0.sfg +Q1=+Sinl,+Olbb=200,+Opmsa,+Olzyinl +Q2=+Sinl,+Olbb=200,+Opmsa,+Olzyinl +Q3=+Sinl,+Olbb=1000,+Opmsa,+Olzyinl +Qfast=+Sinl,+Olbb=1000,+Opmsa,+Olzyinl,+Opfp +Qs=+Sinl,+Olbb=200,+Opmsa,+Olzyinl +Qz=+Sinl,+Olbb=200,+Opmsa,+Olzyinl me
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: noodle version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading enablings from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess.ena
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me.isb
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess.lib
+
+Translating source file ...
+
+
+Checking ...
+
+Reading DSFG from: ../Release/chesswork/24_0.sfg
+
+Translating ...
+
+        unsigned main()
+        void n2n_trans1(void *, void *)
+
+Finishing ...
+
+
+noodle user time   =    1.44 s  /     1.39 s 	24_0
+noodle system time =    0.29 s  /     0.26 s 	24_0
+noodle real time   =    1.76 s  /     1.67 s 	24_0
+
+chess-backend 24_0-F_main_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x --print-subtools --cosel -v -m +ef -M3 -S64 --amnesia -v -p12 -q2 -eAM -rCLH -fR=2 +Oexcf +Oearly-fanout-complex +Odhls -Ono-prune-mappings +Oexcc +Oprefer-local-reg-moves -Ono-collapse-bundles --mist1 -v -k100 --showcolor -v -c -b --mist2 -v +Omodo -k100 +Omsbr=2000 +Opnll +A +pnopALU +pnopLDA +pnopLDB +pnopSTS +pnopVEC +Ofexm +Onzmem +Ono-mapping-backtracking +Oalways-check-exec-paths +Omodulo-scheduling-minimize-folding-index +Omodulo-scheduling-lookahead-critical-transitory-class=AcqLdaRsrc_ID,AcqLdbRsrc_ID:2 +NOdra +Odisable-spill-instr-class=LR_short_spill --tale -v -g -D__AIENGINE__ -D__AIEARCH__=1 -DDEPLOYMENT_ELF=1 -V24_0 -L
+chess-backend 24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x --print-subtools --cosel -v -m +ef -M3 -S64 --amnesia -v -p12 -q2 -eAM -rCLH -fR=2 +Oexcf +Oearly-fanout-complex +Odhls -Ono-prune-mappings +Oexcc +Oprefer-local-reg-moves -Ono-collapse-bundles --mist1 -v -k100 --showcolor -v -c -b --mist2 -v +Omodo -k100 +Omsbr=2000 +Opnll +A +pnopALU +pnopLDA +pnopLDB +pnopSTS +pnopVEC +Ofexm +Onzmem +Ono-mapping-backtracking +Oalways-check-exec-paths +Omodulo-scheduling-minimize-folding-index +Omodulo-scheduling-lookahead-critical-transitory-class=AcqLdaRsrc_ID,AcqLdbRsrc_ID:2 +NOdra +Odisable-spill-instr-class=LR_short_spill --tale -v -g -D__AIENGINE__ -D__AIEARCH__=1 -DDEPLOYMENT_ELF=1 -V24_0 -L
+chess-backend --gvt me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation --tale -v -g -D__AIENGINE__ -D__AIEARCH__=1 -DDEPLOYMENT_ELF=1 -V24_0 -L
+NOTICE : reserve 2 fields of register R in leaf loops (to favor software pipelining)
+
+--cosel -v -m +ef -M3 -S64 --common 24_0-F_main_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: cosel version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+
+Reading enablings from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess.ena
+NOTICE : reserve 2 fields of register R in leaf loops (to favor software pipelining)
+
+--cosel -v -m +ef -M3 -S64 --common 24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: cosel version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+
+Reading enablings from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess.ena
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: tale version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading enablings from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib//isg/me_chess.ena
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me.isb
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me.isb
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib//isg/me.isb
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess.lib
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess.lib
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib//isg/me_chess.lib
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_bndl.isg
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_bndl.isg
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_dr.isg
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_dr.isg
+Reading DSFG from: 24_0-F_main_.sfg
+Reading DSFG from: 24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_.sfg
+Reading LIB/ISG from: 24_0.lib
+Reading elongation rules from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation
+Collecting static variable register operations...
+
+
+Collecting static variable register operations...
+
+
+**** Bundling `F_main' ****
+Applying long jump data
+**** Bundling `F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE' ****
+Applying long jump data
+
+   macro #28 (6 opn)
+      matching... Reading relocators from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib//isg/me.rlo with command tct_gcpp3 -nostdinc -nostdinc++ -lang-asm  -D"__AIENGINE__" -D"__AIEARCH__"="1" -D"DEPLOYMENT_ELF"="1" -I"/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/" -I"/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib//isg/"
+
+   macro #100 (4 opn)
+      matching... Reading DSFG from: 24_0.gvt
+Reading initial values from: 24_0.ini
+Reading initial values from: 24_0.sfg
+Reading Dwarf register-list from file '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_regs.txt' ...
+Reading Dwarf register ID's from file '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_regid.txt' ...
+
+Dumping object file '24_0.gvt.o' in ELF format with DWARF debug information (1)
+
+tale user time   =    0.03 s  /     0.00 s 	24_0
+tale system time =    0.03 s  /     0.00 s 	24_0
+tale real time   =    0.09 s  /     0.00 s 	24_0
+
+(9 p) (18 P)
+      covering... (8 its) (cost 4681.793)
+
+   macro #37 (6 opn)
+      matching... (4 p) (15 P)
+      covering... (2 its) (cost 2358.044)
+
+   macro #257 (32 opn)
+      matching... (5 p) (6 P)
+      covering... (4 its) (cost 2339.951)
+
+   macro #411 (7 opn)
+      matching... (7 p) (19 P)
+      covering... (5 its) (cost 3541.075)
+
+   macro #96 (2 opn)
+      matching... (1 p) (2 P)
+      covering... (1 its) (cost 1180.021)
+
+   macro #944 (1 opn)
+      matching... (2 p) (2 P)
+      covering... (2 its) (cost 1180.020)
+
+   macro #902 (7 opn)
+      matching... (6 p) (10 P)
+      covering... (5 its) (cost 4760.063)
+
+   macro #89 (3 opn)
+      matching... (1 p) (4 P)
+      covering... (1 its) (cost 1191.021)
+
+   macro #85 (3 opn)
+      matching... (1 p) (4 P)
+      covering... (1 its) (cost 1191.021)
+
+   macro #161 (8 opn)
+      matching... (4 p) (15 P)
+      covering... (2 its) (cost 2400.044)
+
+   macro #73 (1 opn)
+      matching... (1 p) (2 P)
+      covering... (1 its) (cost 1190.011)
+
+   macro #67 (3 opn)
+      matching... (1 p) (4 P)
+      covering... (1 its) (cost 1191.021)
+
+   macro #133 (5 opn)
+      matching... (3 p) (12 P)
+      covering... (2 its) (cost 2380.042)
+
+   macro #61 (3 opn)
+      matching... (1 p) (4 P)
+      covering... (1 its) (cost 1191.021)
+
+   macro #878 (5 opn)
+      matching... (3 p) (12 P)
+      covering... (2 its) (cost 2380.042)
+
+   macro #870 (5 opn)
+      matching... (5 p) (7 P)
+      covering... (3 its) (cost 2359.064)
+
+   macro #607 (30 opn)
+      matching... (41 p) (99 P)
+      covering... (52 its) (cost 17548.319)
+
+
+Total cost = 24588.156
+
+cosel user time   =    0.11 s  /     0.06 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+cosel system time =    0.02 s  /     0.00 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+cosel real time   =    0.13 s  /     0.06 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+
+--amnesia -v -p12 -q2 -eAM -rCLH -fR=2 +Oexcf +Oearly-fanout-complex +Odhls -Ono-prune-mappings +Oexcc +Oprefer-local-reg-moves -Ono-collapse-bundles --common 24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: amnesia version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading interprocedural optimisation data from: 24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_.flc
+Reading pattern DSFGs from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_dr.sfg
+
+application DSFG routing:
+
+**** Routing 'F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE' ****
+(32 p) (35 P)
+      covering... (23 its) (cost 21059.270)
+
+
+Total cost = 49533.687
+
+cosel user time   =    0.12 s  /     0.08 s 	24_0-F_main_
+cosel system time =    0.04 s  /     0.02 s 	24_0-F_main_
+cosel real time   =    0.16 s  /     0.09 s 	24_0-F_main_
+
+--amnesia -v -p12 -q2 -eAM -rCLH -fR=2 +Oexcf +Oearly-fanout-complex +Odhls -Ono-prune-mappings +Oexcc +Oprefer-local-reg-moves -Ono-collapse-bundles --common 24_0-F_main_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: amnesia version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading interprocedural optimisation data from: 24_0-F_main_.flc
+Reading pattern DSFGs from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_dr.sfg
+
+application DSFG routing:
+
+**** Routing 'F_main' ****
+analysing connectivity in ISG
+analysing connectivity in ISG
+initial DSFG transformations
+initial timing
+initialise routing
+dependency hazard solving
+
+1 of 2: (4 37 13)
+
+2 of 2: (28 257)
+
+sync/offset hazards solving
+
+
+time (after hazard solving) =   0.070 s
+
+routing control inputs
+
+routing
+
+1 of 2 ( 4 37 13 )
+# uses: 9 +1 +1 +1 +1 ++1 +1 +1 +1 (check) 
+
+2 of 2 ( 257 28 )
+# uses: 28 +6 +6 +3 +3 +3 +3 +1 +1 +1 +1 +1 +3 +1 +1 +1 +3 +1 +1 +1 +1 +1 +1 +1 +1 +3 +1 +1 +3 (check) 
+
+final flow graph transformations
+Removing dead operations ...Expanding complex patterns ...Creating 'dr_move' opns ...
+number of 'reduced cluster size' : 0
+
+amnesia user time   =    0.08 s  /     0.07 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+amnesia system time =    0.00 s  /     0.00 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+amnesia real time   =    0.08 s  /     0.08 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+
+--mist1 -v -k100 --common 24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: mist version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Mist1 : side effect checking is disabled
+Using nop instruction classes specified in me_chess.lib
+
+NOTICE: no instructions are printed in error nor debugfile,
+        because the instruction length > 100
+
+
+NOTE : maximum range of occupy-stages for transitories = 8
+
+looking up standalone NOP instruction
+initial DSFG transformations
+
+Compiling all mappings: 0%..100%
+
+adding manifest flow nodes ...
+
+Constructing flow graphs ...
+Scheduling basic blocks ...
+initial timing
+
+HW do-loop #37 in "/home/Jinming/research/aie_project/n2n/aie/n2n_trans1.cc", line 8: (loop #3) :
+critical cycle of length 7 : b31 -> b31
+minimum length due to resources: 7
+scheduling HW do-loop #37     	-> # cycles: 7 
+  -> HW do-loop #37 in "/home/Jinming/research/aie_project/n2n/aie/n2n_trans1.cc", line 8: (loop #3) : 7 cycles
+initialise routing
+dependency hazard solving
+
+1 of 5: (28 161 19)
+
+2 of 5: (64 68 85 89 878 80 67 58 62 79 902 61 14 35 133 86 73 90)
+(fanout-hzds) (splits:1) (fanout-hzds) (splits:1) 
+3 of 5: (944 945 36 9 10)
+
+4 of 5: (4 870 93 97 92 96 411 44)
+scheduling macro #257     	-> # cycles: 
+5 of 5: (100 607)
+(fanout-hzds) (splits:1) 
+sync/offset hazards solving
+
+
+time (after hazard solving) =   0.070 s
+
+routing control inputs
+12 
+
+routing
+
+1 of 5 ( 19 161 28 )
+# uses: 9 +1 +1 +1 +1 ++1 ++1 +1 (check) 
+
+2 of 5 ( 14 878 61 133 67 73 79 85 89 902 35 )
+# uses: 38 +1 +1 +12 scheduling macro #28     	-> # cycles: 9 
+
+Total number of cycles = 28
+
+Checking data/anti-dependencies beyond basic block boundaries
+Checking resource conflicts beyond basic block boundaries
+
+mist1 user time   =    0.04 s  /     0.04 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+mist1 system time =    0.00 s  /     0.00 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+mist1 real time   =    0.04 s  /     0.04 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+
+--showcolor -v -c -b --common 24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: showcolor version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading pattern DSFGs from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_dr.sfg
+initialisation
++collect coupled operands: .12 ....................
+  10 couplings found
+collect RMW pairs: CB CS LC LE LR LS M P R SP mcCarry
+register: CB
+	rmw pairs: 0
+	assigning fields: 0 1
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: CS
+	rmw pairs: 0
+	assigning fields: 0 1
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: LC
+	assigning fields:
+	rematerialising : 0 moves
+
+register: LE
+	assigning fields:
+	rematerialising : 0 moves
+
+register: LR
+	assigning fields:
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: LS
+	assigning fields:
+	rematerialising : 0 moves
+
+register: M
+	rmw pairs: 0
+	assigning fields: 0
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: P
+	rmw pairs: 8
+	coalescing      : ........
+                          2 rmw fanout splits
+	solving hazards : ++
+	  -> 2 splits
+	assigning fields: 6 7 1 0 2 3
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: R
+	rmw pairs: 0
+	assigning fields: 10 11 8 4 0
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: SP
+	assigning fields:
+	rematerialising : 0 moves
+
++register: mcCarry
+	assigning fields:
+	postbalancing   : none
+	rematerialising : 0 moves
+
+align offsets:
+	computing ideal alignment on mergeable borders: .2 .
+	handle assignment constraints
+	reassign aligned offsets: CB CS(!) M P R
+	updating reassigned offsets in sfg
+
+collect coupled operands: ..........+.....2 ........
+  2 couplings found
+solving cycles: none
++1 +4 +2 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +2 +1 +++1 +++1 +1 +1 
++1 +1 solving cycles: none
+
+2 ra_moves inserted
+
++1 +1 +1 (R:t)-1 Writing LIB (with interprocedural optimisation data) to: 24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE__ra.lib
+1 
+showcolor user time   =    0.02 s  /     0.02 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+showcolor system time =    0.00 s  /     0.00 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+showcolor real time   =    0.03 s  /     0.02 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+
+--mist2 -v +Omodo -k100 +Omsbr=2000 +Opnll +A +pnopALU +pnopLDA +pnopLDB +pnopSTS +pnopVEC +Ofexm +Onzmem +Ono-mapping-backtracking +Oalways-check-exec-paths +Omodulo-scheduling-minimize-folding-index +Omodulo-scheduling-lookahead-critical-transitory-class=AcqLdaRsrc_ID,AcqLdbRsrc_ID:2 +NOdra +Odisable-spill-instr-class=LR_short_spill --common 24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: mist version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Mist2 : side effect checking is enabled
+3 Using nop instruction classes specified in me_chess.lib
+1 1 3 1 1 1 1 1 1 1 1 4 1 1 4 1 1 1 1 1 1 1 1 4 1 1 4 1 1 1 1 1 1 1 1 1 1 1 1 +1 (R:t)-1 1 3 1 1 3 1 1 1 1 
+NOTICE: no instructions are printed in error nor debugfile,
+        because the instruction length > 100
+
+Reading elongation rules from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation
+1 1 1 1 4 1 1 1 1 1 1 1 1 4 1 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 +1 +1 (check) (P)
+
+3 of 5 ( 4 870 9 945 944 36 92 96 411 44 )
+# uses: 19 +4 +1 +2 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 (check) 
+
+4 of 5 ( 10 )
+# uses: 13 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 (check) 
+
+5 of 5 ( 607 100 )
+# uses: 23 +1 +1 +1 (R:t)-1 1 1 +1 (R:t)-1 1 1 +1 (R:t)-1 1 1 +1 +1 +1 +3 +5 +5 +1 (R0:t)-5 29 29 
+NOTE : maximum range of occupy-stages for transitories = 8
+
+looking up standalone NOP instruction
+17 11 11 11 20 +1 +3 +1 +1 +3 +1 +1 +3 +1 +3 +2 (check) 
+
+final flow graph transformations
+Removing dead operations ...Expanding complex patterns ...
+Compiling all mappings: 0%..Creating 'dr_move' opns ...
+number of 'reduced cluster size' : 0
+
+amnesia user time   =    0.14 s  /     0.14 s 	24_0-F_main_
+amnesia system time =    0.01 s  /     0.01 s 	24_0-F_main_
+amnesia real time   =    0.16 s  /     0.16 s 	24_0-F_main_
+
+100%
+
+review chess_separator_scheduler(offset > 0)
+removing chess_separator blocks in foldable loops
+--mist1 -v -k100 --common 24_0-F_main_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: mist version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Mist1 : side effect checking is disabled
+Using nop instruction classes specified in me_chess.lib
+
+HW do-loop #37 in "/home/Jinming/research/aie_project/n2n/aie/n2n_trans1.cc", line 8: (loop #3) :
+critical cycle of length 7 : b31 -> b31
+minimum length due to resources: 7
+scheduling HW do-loop #37
+(algo 1a)	-> # cycles: 7  (== lower bound !)  -> no folding: 7
+  -> HW do-loop #37 in "/home/Jinming/research/aie_project/n2n/aie/n2n_trans1.cc", line 8: (loop #3) : 7 cycles
+removing chess_separator blocks (all)
+
+jump threading ...
+adding manifest flow nodes ...
+
+Constructing flow graphs ...
+Scheduling basic blocks ...
+
+NOTICE: no instructions are printed in error nor debugfile,
+        because the instruction length > 100
+
+
+NOTE : maximum range of occupy-stages for transitories = 8
+
+looking up standalone NOP instruction
+scheduling macro #257     	-> # cycles: 
+Compiling all mappings: 0%..10%..20%..30%..40%..50%..60%..70%..80%..90%..100%
+
+adding manifest flow nodes ...
+
+Constructing flow graphs ...
+Scheduling basic blocks ...
+
+HW do-loop #161 in "/home/Jinming/research/aie_project/n2n/aie/n2n_trans1.cc", line 8: (loop #18) :
+critical cycle of length 7 : b107 -> b107
+minimum length due to resources: 7
+scheduling HW do-loop #161     	-> # cycles: 7 
+  -> HW do-loop #161 in "/home/Jinming/research/aie_project/n2n/aie/n2n_trans1.cc", line 8: (loop #18) : 7 cycles
+scheduling macro #878     	-> # cycles: 2 
+scheduling macro #61     	-> # cycles: 1 
+scheduling macro #133     	-> # cycles: 2 
+scheduling macro #67     	-> # cycles: 4 
+scheduling macro #73     	-> # cycles: 3 
+scheduling macro #85     	-> # cycles: 7 
+scheduling macro #89     	-> # cycles: 4 
+scheduling macro #902     	-> # cycles: 9 
+scheduling macro #870     	-> # cycles: 14 
+scheduling macro #944     	-> # cycles: 6 
+scheduling macro #96     	-> # cycles: 9 
+scheduling macro #411     	-> # cycles: 20 
+scheduling macro #607     	-> # cycles: 13 
+scheduling macro #100     	-> # cycles: 8 
+
+Total number of cycles = 109
+
+Checking data/anti-dependencies beyond basic block boundaries
+Checking resource conflicts beyond basic block boundaries
+
+mist1 user time   =    0.06 s  /     0.06 s 	24_0-F_main_
+mist1 system time =    0.00 s  /     0.00 s 	24_0-F_main_
+mist1 real time   =    0.05 s  /     0.05 s 	24_0-F_main_
+
+--showcolor -v -c -b --common 24_0-F_main_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: showcolor version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading pattern DSFGs from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_dr.sfg
+initialisation
+13 
+upgraded carrier of signal _cst.2088,__rt.2222 to R
+collect coupled operands: ...............................................scheduling macro #28     	-> # cycles: ........
+  7 couplings found
+collect RMW pairs: C CB CS LC LE LR LS M P R SP mcCarry
+register: C {CL CH}
+	rmw pairs: 0
+	assigning fields: CL[0] CH[0] CH[1] CL[1]
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: CB
+	rmw pairs: 0
+	assigning fields: 0 1
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: CS
+	rmw pairs: 0
+	assigning fields: 06
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: LC
+ 
+	assigning fields:
+	rematerialising : 0 moves
+
+register: LE
+	assigning fields:
+	rematerialising : 0 moves
+
+register: LR
+
+Total number of cycles = 26
+
+Checking data/anti-dependencies beyond basic block boundaries
+Checking resource conflicts beyond basic block boundaries
+	assigning fields:
+	postbalancing   : none
+Checking pipeline hazards ...
+	rematerialising : 0 moves
+
+register: LS
+	assigning fields:
+	rematerialising : 0 moves
+
+register: M
+	rmw pairs: 0
+	assigning fields: 0
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: P
+	rmw pairs: 5
+	coalescing      : .....
+                          0 rmw fanout splits
+	assigning fields: 6 7 0 1 2
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: R
+	rmw pairs: 0
+	assigning fields: 10 11 8 9 12 13 14 15 4 1 2 3Filling in loop counts in instruction enabling ...
+Re-filling in 'a', 'r' values in instruction enabling ...
+Adjusting target addresses ...
+Filling in target addresses in instruction enabling ...
+ 5
+	postbalancing   : Writing micro-code to ``24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_.mic'' ...
+none
+
+mist2 user time   =    0.12 s  /     0.12 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+mist2 system time =    0.01 s  /     0.01 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+mist2 real time   =    0.13 s  /     0.13 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+
+--tale -v -g -D__AIENGINE__ -D__AIEARCH__=1 -DDEPLOYMENT_ELF=1 -V24_0 -L --common 24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: tale version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading elongation rules from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation
+	rematerialising : 0 moves
+
+register: SP
+	assigning fields:
+	rematerialising : 0 moves
+
+register: mcCarry
+	assigning fields:
+	postbalancing   : none
+	rematerialising : 0 moves
+
+align offsets:
+	computing ideal alignment on mergeable borders: ..
+	handle assignment constraints
+	reassign aligned offsets: CB CH CL CS M P R
+	updating reassigned offsets in sfg
+
+collect coupled operands: .......................................................
+  2 couplings found
+
+violated couplings: 1
+
+Iteration required: enforce operand locations to satisfy coupled operand constraints
+Please run RA1 again.
+
+showcolor user time   =    0.05 s  /     0.05 s 	24_0-F_main_
+showcolor system time =    0.00 s  /     0.00 s 	24_0-F_main_
+showcolor real time   =    0.05 s  /     0.05 s 	24_0-F_main_
+
+--amnesia -v -p12 -q2 -eAM -rCLH -fR=2 +Oexcf +Oearly-fanout-complex +Odhls -Ono-prune-mappings +Oexcc +Oprefer-local-reg-moves -Ono-collapse-bundles --common 24_0-F_main_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: amnesia version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading interprocedural optimisation data from: 24_0-F_main_.flc
+Reading pattern DSFGs from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_dr.sfg
+
+application DSFG routing:
+
+**** Routing 'F_main' ****
+Reading relocators from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib//isg/me.rlo with command tct_gcpp3 -nostdinc -nostdinc++ -lang-asm  -D"__AIENGINE__" -D"__AIEARCH__"="1" -D"DEPLOYMENT_ELF"="1" -I"/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/" -I"/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib//isg/"
+Reading DSFG from: 24_0.gvt
+Reading Dwarf register-list from file '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_regs.txt' ...
+Reading Dwarf register ID's from file '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_regid.txt' ...
+
+Dumping object file '24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_.o' in ELF format with DWARF debug information (1)
+
+tale user time   =    0.01 s  /     0.01 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+tale system time =    0.01 s  /     0.01 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+tale real time   =    0.04 s  /     0.01 s 	24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_
+
+analysing connectivity in ISG
+initial DSFG transformations
+initial timing
+initialise routing
+dependency hazard solving
+
+1 of 5: (28 161 19)
+
+2 of 5: (64 68 85 89 878 80 67 58 62 79 902 61 14 35 133 86 73 90)
+(fanout-hzds) (splits:1) (fanout-hzds) (splits:1) 
+3 of 5: (944 945 36 9 10)
+
+4 of 5: (4 870 93 97 92 96 411 44)
+
+5 of 5: (100 607)
+(fanout-hzds) (splits:1) 
+sync/offset hazards solving
+
+
+time (after hazard solving) =   0.070 s
+
+routing control inputs
+
+routing
+
+1 of 5 ( 19 161 28 )
+# uses: 9 +1 +1 +1 +1 ++1 +1 +1 +1 (check) 
+
+2 of 5 ( 14 878 61 133 67 73 79 85 89 902 35 )
+# uses: 39 +1 +1 +12 +12 +2 +2 +1 +2 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +++1 +++1 +1 +1 +1 +1 +1 +1 +1 +1 +1 (R:t)-1 1 3 1 1 3 1 1 1 1 1 1 1 1 4 1 1 4 1 1 1 1 1 1 1 1 4 1 1 4 1 1 1 1 1 1 1 1 1 1 1 1 +1 (R:t)-1 1 3 1 1 3 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 1 1 4 1 1 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 +1 (check) (P)
+
+3 of 5 ( 4 870 9 945 944 36 92 96 411 44 )
+# uses: 20 +4 +1 +2 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 (check) 
+
+4 of 5 ( 10 )
+# uses: 14 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 +1 (check) 
+
+5 of 5 ( 607 100 )
+# uses: 24 +1 +1 +1 (R:t)-1 1 1 +1 (R:t)-1 1 1 +1 (R:t)-1 1 1 +1 +1 +1 +3 +5 +5 +1 (R0:t)-5 29 29 17 11 11 11 20 +1 +6 +1 +3 +1 +1 +3 +1 +1 +3 +1 +3 (check) 
+
+final flow graph transformations
+Removing dead operations ...Expanding complex patterns ...Creating 'dr_move' opns ...
+number of 'reduced cluster size' : 0
+
+amnesia user time   =    0.14 s  /     0.14 s 	24_0-F_main_
+amnesia system time =    0.00 s  /     0.00 s 	24_0-F_main_
+amnesia real time   =    0.15 s  /     0.14 s 	24_0-F_main_
+
+--mist1 -v -k100 --common 24_0-F_main_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: mist version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Mist1 : side effect checking is disabled
+Using nop instruction classes specified in me_chess.lib
+
+NOTICE: no instructions are printed in error nor debugfile,
+        because the instruction length > 100
+
+
+NOTE : maximum range of occupy-stages for transitories = 8
+
+looking up standalone NOP instruction
+
+Compiling all mappings: 0%..10%..20%..30%..40%..50%..60%..70%..80%..90%..100%
+
+adding manifest flow nodes ...
+
+Constructing flow graphs ...
+Scheduling basic blocks ...
+
+HW do-loop #161 in "/home/Jinming/research/aie_project/n2n/aie/n2n_trans1.cc", line 8: (loop #18) :
+critical cycle of length 7 : b107 -> b107
+minimum length due to resources: 7
+scheduling HW do-loop #161     	-> # cycles: 7 
+  -> HW do-loop #161 in "/home/Jinming/research/aie_project/n2n/aie/n2n_trans1.cc", line 8: (loop #18) : 7 cycles
+scheduling macro #878     	-> # cycles: 2 
+scheduling macro #61     	-> # cycles: 1 
+scheduling macro #133     	-> # cycles: 2 
+scheduling macro #67     	-> # cycles: 4 
+scheduling macro #73     	-> # cycles: 2 
+scheduling macro #85     	-> # cycles: 7 
+scheduling macro #89     	-> # cycles: 4 
+scheduling macro #902     	-> # cycles: 9 
+scheduling macro #870     	-> # cycles: 14 
+scheduling macro #944     	-> # cycles: 6 
+scheduling macro #96     	-> # cycles: 9 
+scheduling macro #411     	-> # cycles: 20 
+scheduling macro #607     	-> # cycles: 14 
+scheduling macro #100     	-> # cycles: 8 
+
+Total number of cycles = 109
+
+Checking data/anti-dependencies beyond basic block boundaries
+Checking resource conflicts beyond basic block boundaries
+
+mist1 user time   =    0.03 s  /     0.03 s 	24_0-F_main_
+mist1 system time =    0.00 s  /     0.00 s 	24_0-F_main_
+mist1 real time   =    0.03 s  /     0.03 s 	24_0-F_main_
+
+--showcolor -v -c -b --common 24_0-F_main_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: showcolor version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading pattern DSFGs from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_dr.sfg
+initialisation
+upgraded carrier of signal _cst.2109,__rt.2244 to R
+Reading operand couplings: 2 couplings
+collect coupled operands: .......................................................
+  7 couplings found
+collect RMW pairs: C CB CS LC LE LR LS M P R SP mcCarry
+register: C {CL CH}
+	rmw pairs: 0
+	assigning fields: CL[0] CH[0] CH[1]
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: CB
+	rmw pairs: 0
+	assigning fields:
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: CS
+	rmw pairs: 0
+	solving hazards : +
+	  -> 1 splits
+	assigning fields:
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: LC
+	assigning fields:
+	rematerialising : 0 moves
+
+register: LE
+	assigning fields:
+	rematerialising : 0 moves
+
+register: LR
+	assigning fields:
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: LS
+	assigning fields:
+	rematerialising : 0 moves
+
+register: M
+	rmw pairs: 0
+	assigning fields: 0
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: P
+	rmw pairs: 5
+	coalescing      : .....
+                          0 rmw fanout splits
+	assigning fields: 6 7 0 1 2
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: R
+	rmw pairs: 0
+	assigning fields: 10 11 8 9 12 13 14 15 4 1 2 3 5
+	postbalancing   : none
+	rematerialising : 0 moves
+
+register: SP
+	assigning fields:
+	rematerialising : 0 moves
+
+register: mcCarry
+	assigning fields:
+	postbalancing   : none
+	rematerialising : 0 moves
+
+align offsets:
+	computing ideal alignment on mergeable borders: ..
+	handle assignment constraints
+	reassign aligned offsets: CB CH CL CS M P R
+	updating reassigned offsets in sfg
+
+collect coupled operands: ........................................................
+  2 couplings found
+solving cycles: none
+
+solving cycles: none
+
+1 ra_move inserted
+
+showcolor iterated 1 time to RA1
+
+Writing LIB (with interprocedural optimisation data) to: 24_0-F_main__ra.lib
+
+showcolor user time   =    0.06 s  /     0.06 s 	24_0-F_main_
+showcolor system time =    0.01 s  /     0.01 s 	24_0-F_main_
+showcolor real time   =    0.06 s  /     0.06 s 	24_0-F_main_
+
+--mist2 -v +Omodo -k100 +Omsbr=2000 +Opnll +A +pnopALU +pnopLDA +pnopLDB +pnopSTS +pnopVEC +Ofexm +Onzmem +Ono-mapping-backtracking +Oalways-check-exec-paths +Omodulo-scheduling-minimize-folding-index +Omodulo-scheduling-lookahead-critical-transitory-class=AcqLdaRsrc_ID,AcqLdbRsrc_ID:2 +NOdra +Odisable-spill-instr-class=LR_short_spill --common 24_0-F_main_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: mist version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Mist2 : side effect checking is enabled
+Using nop instruction classes specified in me_chess.lib
+
+NOTICE: no instructions are printed in error nor debugfile,
+        because the instruction length > 100
+
+Reading elongation rules from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation
+
+NOTE : maximum range of occupy-stages for transitories = 8
+
+looking up standalone NOP instruction
+
+Compiling all mappings: 0%..10%..20%..30%..40%..50%..60%..70%..80%..90%..100%
+
+review chess_separator_scheduler(offset > 0)
+removing chess_separator blocks in foldable loops
+
+HW do-loop #161 in "/home/Jinming/research/aie_project/n2n/aie/n2n_trans1.cc", line 8: (loop #18) :
+critical cycle of length 7 : b107 -> b107
+minimum length due to resources: 7
+scheduling HW do-loop #161
+(algo 1a)	-> # cycles: 7  (== lower bound !)  -> no folding: 7
+  -> HW do-loop #161 in "/home/Jinming/research/aie_project/n2n/aie/n2n_trans1.cc", line 8: (loop #18) : 7 cycles
+removing chess_separator blocks (all)
+
+jump threading ...
+adding manifest flow nodes ...
+
+Constructing flow graphs ...
+Scheduling basic blocks ...
+scheduling macro #878     	-> # cycles: 2 
+scheduling macro #61     	-> # cycles: 1 
+scheduling macro #133     	-> # cycles: 2 
+scheduling macro #67     	-> # cycles: 2 
+scheduling macro #73     	-> # cycles: 3 
+scheduling macro #85     	-> # cycles: 7 
+scheduling macro #89     	-> # cycles: 4 
+scheduling macro #902     	-> # cycles: 8 
+scheduling macro #870     	-> # cycles: 14 
+scheduling macro #947     	-> # cycles: 8 
+scheduling macro #96     	-> # cycles: 1 
+scheduling macro #949     	-> # cycles: 5 
+scheduling macro #411     	-> # cycles: 15 
+scheduling macro #607     	-> # cycles: 14 
+scheduling macro #100     	-> # cycles: 14 
+
+Total number of cycles = 107
+
+Checking data/anti-dependencies beyond basic block boundaries
+Checking resource conflicts beyond basic block boundaries
+Checking pipeline hazards ...
+Filling in loop counts in instruction enabling ...
+Re-filling in 'a', 'r' values in instruction enabling ...
+Adjusting target addresses ...
+Filling in target addresses in instruction enabling ...
+Writing micro-code to ``24_0-F_main_.mic'' ...
+
+mist2 user time   =    0.27 s  /     0.27 s 	24_0-F_main_
+mist2 system time =    0.03 s  /     0.03 s 	24_0-F_main_
+mist2 real time   =    0.31 s  /     0.31 s 	24_0-F_main_
+
+--tale -v -g -D__AIENGINE__ -D__AIEARCH__=1 -DDEPLOYMENT_ELF=1 -V24_0 -L --common 24_0-F_main_ me /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib +H/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation -x
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: tale version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading elongation rules from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/elongation
+Reading relocators from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib//isg/me.rlo with command tct_gcpp3 -nostdinc -nostdinc++ -lang-asm  -D"__AIENGINE__" -D"__AIEARCH__"="1" -D"DEPLOYMENT_ELF"="1" -I"/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/" -I"/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib//isg/"
+Reading DSFG from: 24_0.gvt
+Reading Dwarf register-list from file '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_regs.txt' ...
+Reading Dwarf register ID's from file '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_regid.txt' ...
+
+Dumping object file '24_0-F_main_.o' in ELF format with DWARF debug information (1)
+
+tale user time   =    0.01 s  /     0.01 s 	24_0-F_main_
+tale system time =    0.01 s  /     0.00 s 	24_0-F_main_
+tale real time   =    0.12 s  /     0.09 s 	24_0-F_main_
+
+bridge -v -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg -i -g -I/opt/tools/xilinx/Vitis/2021.1/aietools/include -I../../scripts/./aie -I/home/Jinming/research/aie_project/n2n/. -I/home/Jinming/research/aie_project/n2n/./aie -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/include -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libs/libcxx-9.0.0/include-lite -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/include -D__AIENGINE__ -D__AIEARCH__=1 -DDEPLOYMENT_ELF=1 24_0.objlist -o../24_0.o -pme
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: bridge version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading enablings from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_das.ena
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_das.isb
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_types.lib
+Reading relocator definitions in file '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me.rlo'...
+Creating link-memory
+Reading '24_0.objlist' ...
+    Adding '24_0-F_main_.o' with source reference offset 0
+    Adding '24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_.o' with source reference offset 0
+    Adding '24_0.gvt.o' with source reference offset 0
+Reading objectfile '24_0-F_main_.o' with Dwarf info...
+Reading objectfile '24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_.o' with Dwarf info...
+Reading objectfile '24_0.gvt.o' with Dwarf info...
+Library search path: .
+Library search path: 
+Loading aliases information from file '24_0.aliases'
+Creating object file '../24_0.o'...
+    Adding '24_0.gvt.o'...
+    Adding '24_0-F_main_.o'...
+    Adding '24_0-F_Z10n2n_trans1P12input_windowIsEP13output_windowIsE_.o'...
+Writing object file '../24_0.o' (1) ...
+
+bridge user time   =    0.08 s  /     0.01 s 	../24_0.o
+bridge system time =    0.01 s  /     0.00 s 	../24_0.o
+bridge real time   =    0.11 s  /     0.00 s 	../24_0.o
+
+darts -v -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib -d -h -I/opt/tools/xilinx/Vitis/2021.1/aietools/include -I./aie -I/home/Jinming/research/aie_project/n2n/. -I/home/Jinming/research/aie_project/n2n/./aie -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/include -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libs/libcxx-9.0.0/include-lite -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/include -D__AIENGINE__ -D__AIEARCH__=1 -DDEPLOYMENT_ELF=1 -L +Ihex +nanno ../Release/24_0.o me
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: darts version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Include paths: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib:/opt/tools/xilinx/Vitis/2021.1/aietools/include:aie:/home/Jinming/research/aie_project/n2n:/home/Jinming/research/aie_project/n2n/aie:/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/include:/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libs/libcxx-9.0.0/include-lite:/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/include:.:/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg
+Reading enablings from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_das.ena
+Reading binary LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_das.isb
+Parsing binary ISG
+Parsing binary NML
+Building ISG done.
+Reading chess types from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_types.lib
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_types.lib
+Loading chess_types.lib file done.
+Reading relocators from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me.rlo
+
+Disassembling code of ``../Release/24_0.o''
+Writing results to ``../Release/24_0.o.lst''
+
+darts user time   =    0.29 s  /     0.19 s 	../Release/24_0.o
+darts system time =    0.04 s  /     0.01 s 	../Release/24_0.o
+darts real time   =    0.35 s  /     0.20 s 	../Release/24_0.o
+
+Linking "../Release/24_0"
+bridge -o../Release/24_0 ../Release/24_0.o -v -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg -g -I/opt/tools/xilinx/Vitis/2021.1/aietools/include -I./aie -I/home/Jinming/research/aie_project/n2n/. -I/home/Jinming/research/aie_project/n2n/./aie -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/include -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libs/libcxx-9.0.0/include-lite -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/include -D__AIENGINE__ -D__AIEARCH__=1 -DDEPLOYMENT_ELF=1 -c24_0.bcf -L/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/Release -L/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/lib/Release -L/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/softfloat/lib/Release -L/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/lib/Release_LLVM -lme -lc -lm -lc++lite -lsoftfloat -S -export-locals -yMSMEM,SSMEM,SSMEM_tlast,WSSMEM_tlast,SSMEM_nb_sc,MSMEM_nb_sc -iconfig extra_memories.bcf -m -fC -fS -fH +m -T +work ../Release/chesswork -pme
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: bridge version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Reading enablings from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_das.ena
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_das.isb
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_types.lib
+Reading configuration in file '24_0.bcf'...
+Reading relocator definitions in file '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me.rlo'...
+Creating link-memory
+Reading objectfile '../Release/24_0.o' with Dwarf info...
+Library search path: .
+Library search path: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/Release:/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/lib/Release:/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/softfloat/lib/Release:/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/lib/Release_LLVM
+Reading archive '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/Release/libme.a'...
+Reading archive '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/lib/Release/libc.a'...
+Reading archive '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/lib/Release/libm.a'...
+Reading archive '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/lib/Release_LLVM/libc++lite.a'...
+Reading archive '/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/softfloat/lib/Release/libsoftfloat.a'...
+Collecting symbols from object files...
+Collecting absolute symbols...
+Collecting stack range symbols...
+Mapping _after chains...
+Mapping after chain ...
+    '_main_init' (258) at address 0x0
+    '_main' (508) at address 0x110
+Mapping and reserving symbols with fixed addresses...
+    'buf0' (6144, DMb) at address 0x30000
+    'buf0d' (6144, DMb) at address 0x32000
+    'buf1' (6144, DMb) at address 0x38000
+    'buf1d' (6144, DMb) at address 0x3c000
+    '_ZL11sync_buffer' (32) at address 0x3a000
+    '_ZN12me_primitive3ss0E' (1, WSS_rsrc1) at address 0x0
+    '_ZN12me_primitive3ss1E' (1, WSS_rsrc2) at address 0x1
+    '_ZN12me_primitive4sst0E' (1, SSMEM_tlast) at address 0x0
+    '_ZN12me_primitive4sst1E' (1, SSMEM_tlast) at address 0x1
+    '_ZN12me_primitive4ssc0E' (1, SSMEM_nb_sc) at address 0x0
+    '_ZN12me_primitive4ssc1E' (1, SSMEM_nb_sc) at address 0x1
+    '_ZN12me_primitive5wsst0E' (1, WSSMEM_tlast) at address 0x0
+    '_ZN12me_primitive5wsst1E' (1, WSSMEM_tlast) at address 0x1
+    '_ZN12me_primitive3ms0E' (1, WMS_rsrc1) at address 0x0
+    '_ZN12me_primitive3ms1E' (1, WMS_rsrc2) at address 0x1
+    '_ZN12me_primitive4msc0E' (1, MSMEM_nb_sc) at address 0x0
+    '_ZN12me_primitive4msc1E' (1, MSMEM_nb_sc) at address 0x1
+Mapping _after chains...
+Mapping and reserving symbols referenced in _after ...
+Mapping and reserving overlays...
+Overlaying pseudo-static stack-frame sections...
+Mapping defined and space (bss) symbols...
+Mapping read-only symbols...
+Creating call-tree...
+Mapping constructor and destructor sections...
+Looking for duplicate symbols...
+Creating call-tree...
+Reserving text, data and space symbols found in 0 _mapping statements ...
+Mapping and reserving global memory...
+Reserving 8 text and data symbol(s) and 0 space symbol(s)...
+    '_Z10n2n_trans1P12input_windowIsEP13output_windowIsE' (skipped)
+    'ZERO' (skipped)
+    'ONES' (skipped)
+    '_fini' (172, PM)
+    '_ZL7atexits' (32, DM_bankA)
+    '_ZL10atexit_cnt' (4, DM_bankA)
+    '__cxa_atexit' (skipped)
+    '__cxa_finalize' (164, PM)
+Applying relocators found in objectfiles...
+    '../Release/24_0.o' (289)
+    '../Release/chesswork/.ear.work.2jhfotl' (6)
+    '../Release/chesswork/.ear.work.3aYWfrj' (26)
+    '../Release/chesswork/.ear.work.41bwfph' (89)
+    '../Release/chesswork/.ear.work.9PooMBX' (86)
+Creating physical data...
+Creating executable file '../Release/24_0'...
+Skipping memory 'MSMEM'
+Skipping memory 'MSMEM_nb_sc'
+Skipping memory 'SSMEM'
+Skipping memory 'SSMEM_nb_sc'
+Skipping memory 'SSMEM_tlast'
+Skipping memory 'WSSMEM_tlast'
+Creating memory-map
+
+bridge user time   =    0.81 s  /     0.12 s 	../Release/24_0
+bridge system time =    0.20 s  /     0.01 s 	../Release/24_0
+bridge real time   =    1.37 s  /     0.15 s 	../Release/24_0
+
+darts -v -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib -d -h -I/opt/tools/xilinx/Vitis/2021.1/aietools/include -I./aie -I/home/Jinming/research/aie_project/n2n/. -I/home/Jinming/research/aie_project/n2n/./aie -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/include -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libs/libcxx-9.0.0/include-lite -I/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/include -D__AIENGINE__ -D__AIEARCH__=1 -DDEPLOYMENT_ELF=1 -L +Ihex +nanno +u ../Release/24_0 me
+Release: ASIP Programmer  R-2020.09-TGT-210520 
+Tool: darts version R-2020.09#506a3c766d#210520
+Copyright 2014-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to
+Synopsys, Inc. and may only be used pursuant to the terms and conditions of a
+written license agreement with Synopsys, Inc. All other use, reproduction,
+modification, or distribution of the Synopsys software or the associated
+documentation is strictly prohibited.
+
+Include paths: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib:/opt/tools/xilinx/Vitis/2021.1/aietools/include:aie:/home/Jinming/research/aie_project/n2n:/home/Jinming/research/aie_project/n2n/aie:/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libcxx-lite/include:/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime_cxx/libs/libcxx-9.0.0/include-lite:/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/runtime/include:.:/opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg
+Reading enablings from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_das.ena
+Reading binary LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_das.isb
+Parsing binary ISG
+Parsing binary NML
+Building ISG done.
+Reading chess types from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_types.lib
+Reading LIB/ISG from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me_chess_types.lib
+Loading chess_types.lib file done.
+Reading relocators from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/versal_prod/lib/isg/me.rlo
+
+Disassembling code of ``../Release/24_0''
+Writing results to ``../Release/24_0.lst''
+Writing results to ``../Release/24_0.srv''
+
+darts user time   =    0.32 s  /     0.21 s 	../Release/24_0
+darts system time =    0.03 s  /     0.00 s 	../Release/24_0
+darts real time   =    0.36 s  /     0.21 s 	../Release/24_0
+
+Compilation finished successfully (0 errors, 9 warnings) (5.70 s)

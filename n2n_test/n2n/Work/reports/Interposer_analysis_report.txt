@@ -1,0 +1,8 @@
+InterposerAnalysis Report 
+Port Name : i0_po0(Variable Name : platform.src[0]) straightthru <stream> : Chnl 
+Port Name : i1_pi0(Variable Name : platform.sink[0]) straightthru <stream> : Chnl 
+Port Name : i2_pi0(Variable Name : trans1.in[0]) adaptor <stream,memory> : Lock Buff DMA 
+Port Name : i2_po0(Variable Name : trans1.out[0]) straightthru <memory> : Lock Buff 
+Port Name : i3_pi0(Variable Name : trans2.in[0]) straightthru <memory> : Lock Buff 
+Port Name : i3_po0(Variable Name : trans2.out[0]) adaptor <memory,stream> : Lock Buff DMA 
+

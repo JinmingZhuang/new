@@ -1,0 +1,21 @@
+
+
+BUFFER,FROM_INSTANCE.PORT,TO_INSTANCE.PORT,SIZE,MEMORY_GROUP,BANK,OFFSET,DMA_NEEDED
+sysmem4,-,-,1156,"(25, 1)",0,0,-
+buf5,DataIn0.po0,addergraph.trans1.pi0,6144,"(24, 1)",1,0,-
+buf0,DataIn0.po0,addergraph.trans1.pi0,6144,"(24, 1)",0,0,-
+buf7,addergraph.trans2.po0,DataOut.pi0,6144,"(25, 0)",0,2048,-
+buf6,addergraph.trans1.po0,addergraph.trans2.pi0,6144,"(24, 0)",2,0,-
+buf2,addergraph.trans2.po0,DataOut.pi0,6144,"(25, 0)",2,0,-
+sysmem3,-,-,1156,"(24, 0)",1,0,-
+buf1,addergraph.trans1.po0,addergraph.trans2.pi0,6144,"(24, 0)",0,0,-
+
+
+PLIO,IN/OUT,TILE_COLUMN,CHANNEL
+DataOut,out,25,0
+DataIn0,in,24,0
+
+
+CLUSTER,KERNELS,TILE
+PT1,"addergraph.trans2,","(25, 0)"
+PT0,"addergraph.trans1,","(24, 0)"

@@ -1,0 +1,113 @@
+<ENTRY>
+{
+ "thisFile": "/home/Jinming/research/aie_project/n2n_test/n2n_4in/Work/aie_graph.aiecompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Nov 29 14:07:31 2021",
+ "timestampMillis": "1638223651513",
+ "buildStep": {
+  "cmdId": "00b34b97-6d76-4095-8c1c-1f3aaff128fc",
+  "name": "aiecompiler",
+  "logFile": "/home/Jinming/research/aie_project/n2n_test/n2n_4in/AIECompiler.log",
+  "commandLine": "/opt/tools/xilinx/Vitis/2021.1/aietools/bin/unwrapped/lnx64.o/aiecompiler -platform=/opt/xilinx/platforms/xilinx_vck190_base_202110_1/xilinx_vck190_base_202110_1.xpfm -include=./aie -workdir=./Work -v aie/aie_graph.cpp ",
+  "args": [
+   "/opt/tools/xilinx/Vitis/2021.1/aietools/bin/unwrapped/lnx64.o/aiecompiler",
+   "-platform=/opt/xilinx/platforms/xilinx_vck190_base_202110_1/xilinx_vck190_base_202110_1.xpfm",
+   "-include=./aie",
+   "-workdir=./Work",
+   "-v",
+   "aie/aie_graph.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/Jinming/research/aie_project/n2n_test/n2n_4in"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 29 14:07:31 2021",
+ "timestampMillis": "1638223651514",
+ "status": {
+  "cmdId": "00b34b97-6d76-4095-8c1c-1f3aaff128fc",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Nov 29 14:07:31 2021",
+ "timestampMillis": "1638223651514",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_UNKNOWN",
+  "target": "TT_UNKNOWN",
+  "kernels": [],
+  "toolVersion": "Vitis AI Engine Compiler Release 2021.1. SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 14:07:31 2021",
+ "timestampMillis": "1638223651516",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n_test/n2n_4in/Work",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "AIE_COMPILER_WORKDIR",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 14:07:31 2021",
+ "timestampMillis": "1638223651516",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n_test/n2n_4in/Work/reports/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 29 14:07:31 2021",
+ "timestampMillis": "1638223651517",
+ "report": {
+  "path": "/home/Jinming/research/aie_project/n2n_test/n2n_4in/Work/reports/guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 29 14:07:34 2021",
+ "timestampMillis": "1638223654007",
+ "status": {
+  "cmdId": "00b34b97-6d76-4095-8c1c-1f3aaff128fc",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>

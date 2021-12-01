@@ -1,0 +1,52 @@
+{
+    "ModuleName": "K1_n2n_trans2",
+    "SourceFileName": "/home/Jinming/research/aie_project/n2n/aie/n2n_trans2.cc",
+    "StructTypes": [
+        {
+            "Name": "struct.input_window",
+            "Size": 52
+        },
+        {
+            "Name": "struct.output_window",
+            "Size": 52
+        }
+    ],
+    "Globals": [],
+    "Functions": [
+        {
+            "FunctionName": "n2n_trans2(input_window<short>*, output_window<short>*)",
+            "StackSize": 52,
+            "SoftFloat": false
+        },
+        {
+            "FunctionName": "short window_readincr<(aie_dm_resource)0>(input_window<short>*)",
+            "StackSize": 38,
+            "SoftFloat": false
+        },
+        {
+            "FunctionName": "void window_writeincr<(aie_dm_resource)0>(output_window<short>*, short)",
+            "StackSize": 30,
+            "SoftFloat": false
+        },
+        {
+            "FunctionName": "void window_readincr<(aie_dm_resource)0>(input_window<short>*, short&)",
+            "StackSize": 32,
+            "SoftFloat": false
+        },
+        {
+            "FunctionName": "window_incr(output_window<short>*, int)",
+            "StackSize": 24,
+            "SoftFloat": false
+        },
+        {
+            "FunctionName": "window_incr(input_window<short>*, int)",
+            "StackSize": 24,
+            "SoftFloat": false
+        },
+        {
+            "FunctionName": "signed char* cyclic_add<signed char>(signed char*, int, signed char*, int)",
+            "StackSize": 16,
+            "SoftFloat": false
+        }
+    ]
+}

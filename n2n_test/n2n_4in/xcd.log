@@ -1,0 +1,17 @@
+Mon Nov 29 14:07:22 2021: Running xcd server. This server was NOT built by gradle, but presumably rdi.
+Mon Nov 29 14:07:22 2021: Server was asked to start on port: '35869'
+Mon Nov 29 14:07:22 2021: Server is using token UUID: '7267e08c-e622-4c44-8a91-f52bb911f1d7'
+Mon Nov 29 14:07:22 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov 29 14:07:22 2021: Attempting to start server on port '35869'
+Mon Nov 29 14:07:22 2021: XCD main fifo: created main fifo '/tmp/xcdmain7267e08c-e622-4c44-8a91-f52bb911f1d7', fd read = 13
+Mon Nov 29 14:07:22 2021: Running Dispatch Server
+Mon Nov 29 14:07:22 2021: Version 2.2.0
+Mon Nov 29 14:07:31 2021: Dispatch Server: Accepted socket connection from client
+Mon Nov 29 14:07:31 2021: Starting Socket connection
+Mon Nov 29 14:07:31 2021: EXCHANGE_TOKEN received, server token: 7267e08c-e622-4c44-8a91-f52bb911f1d7, passed token: 7267e08c-e622-4c44-8a91-f52bb911f1d7
+Mon Nov 29 14:07:31 2021: SESSION_MGR: creating session with session uuid: '665abdc8-0acb-4ea8-863a-f5bb5db38fd6' and name 'AIE Compilation'
+Mon Nov 29 14:07:31 2021: KERNEL_SVC: creating session with uuid: '665abdc8-0acb-4ea8-863a-f5bb5db38fd6' and name 'AIE Compilation'
+Mon Nov 29 14:07:31 2021: GUIDANCE_SMGR: creating guidance session with uuid: '665abdc8-0acb-4ea8-863a-f5bb5db38fd6' and name 'AIE Compilation'
+Mon Nov 29 14:07:34 2021: SESSION_MGR: closing session for UUID '665abdc8-0acb-4ea8-863a-f5bb5db38fd6' with name ''
+Mon Nov 29 14:07:34 2021: KERNEL_SVC: closing session for UUID '665abdc8-0acb-4ea8-863a-f5bb5db38fd6' with name ''
+Mon Nov 29 14:07:34 2021: GUIDANCE_SMGR: closing session for UUID '665abdc8-0acb-4ea8-863a-f5bb5db38fd6' with name ''

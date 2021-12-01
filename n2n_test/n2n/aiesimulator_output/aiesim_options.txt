@@ -1,0 +1,3 @@
+AIE_PKG_DIR=/home/Jinming/research/aie_project/n2n/./Work
+AIE_DUMP_VCD=foo
+AIE_PROFILE=All

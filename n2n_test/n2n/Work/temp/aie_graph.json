@@ -1,0 +1,280 @@
+{
+    "schema": "MEGraphSchema-0.5",
+    "id": "root",
+    "blockTypes": {
+        "b0": {
+            "type": "plio",
+            "ports": {
+                "po0": {
+                    "type": "stream",
+                    "elementType": "int16",
+                    "direction": "out",
+                    "portName": "platform.src[0]"
+                }
+            }
+        },
+        "b1": {
+            "type": "plio",
+            "ports": {
+                "pi0": {
+                    "type": "stream",
+                    "elementType": "int16",
+                    "direction": "in",
+                    "portName": "platform.sink[0]"
+                }
+            }
+        },
+        "b2": {
+            "type": "function",
+            "function": "n2n_trans1",
+            "srcFile": "n2n_trans1.cc",
+            "ports": {
+                "pi0": {
+                    "type": "mem",
+                    "elementType": "int16",
+                    "direction": "in",
+                    "parameterIndex": 0,
+                    "circularBuffer": 1,
+                    "portName": "in[0]",
+                    "varName": "matA",
+                    "cppDataType": "input_window<short> *"
+                },
+                "po0": {
+                    "type": "mem",
+                    "elementType": "int16",
+                    "direction": "out",
+                    "parameterIndex": 1,
+                    "circularBuffer": 1,
+                    "portName": "out[0]",
+                    "varName": "matB",
+                    "cppDataType": "output_window<short> *"
+                }
+            }
+        },
+        "b3": {
+            "type": "function",
+            "function": "n2n_trans2",
+            "srcFile": "n2n_trans2.cc",
+            "ports": {
+                "pi0": {
+                    "type": "mem",
+                    "elementType": "int16",
+                    "direction": "in",
+                    "parameterIndex": 0,
+                    "circularBuffer": 1,
+                    "portName": "in[0]",
+                    "varName": "matB",
+                    "cppDataType": "input_window<short> *"
+                },
+                "po0": {
+                    "type": "mem",
+                    "elementType": "int16",
+                    "direction": "out",
+                    "parameterIndex": 1,
+                    "circularBuffer": 1,
+                    "portName": "out[0]",
+                    "varName": "matC",
+                    "cppDataType": "output_window<short> *"
+                }
+            }
+        }
+    },
+    "blockInstances": {
+        "i0": {
+            "blockType": "b0",
+            "graphIds": [
+                0
+            ],
+            "graphName": "addergraph",
+            "graphType": "simpleGraph",
+            "dataWidth": 32,
+            "dataFile": "data/input0.txt",
+            "logicalName": "DataIn0",
+            "instanceId": 0,
+            "loc": "aie/aie_graph.cpp:4:1"
+        },
+        "i1": {
+            "blockType": "b1",
+            "graphIds": [
+                0
+            ],
+            "graphName": "addergraph",
+            "graphType": "simpleGraph",
+            "dataWidth": 32,
+            "dataFile": "data/output.txt",
+            "logicalName": "DataOut",
+            "instanceId": 1,
+            "loc": "aie/aie_graph.cpp:5:1"
+        },
+        "i2": {
+            "blockType": "b2",
+            "graphIds": [
+                0
+            ],
+            "graphName": "addergraph",
+            "graphType": "simpleGraph",
+            "qualifiedGraphName": "addergraph",
+            "runTime": 0.6,
+            "fabric": "me",
+            "instanceId": 0,
+            "loc": "aie/aie_graph.h:19:18"
+        },
+        "i3": {
+            "blockType": "b3",
+            "graphIds": [
+                0
+            ],
+            "graphName": "addergraph",
+            "graphType": "simpleGraph",
+            "qualifiedGraphName": "addergraph",
+            "runTime": 0.6,
+            "fabric": "me",
+            "instanceId": 1,
+            "loc": "aie/aie_graph.h:20:18"
+        }
+    },
+    "portInstances": {
+        "i0_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "addergraph",
+            "graphType": "simpleGraph",
+            "portName": "platform.src[0]",
+            "qualifiedGraphPortAliasNames": [
+                "addergraph.in0"
+            ],
+            "blockInstance": "i0"
+        },
+        "i1_pi0": {
+            "margin": 0,
+            "port": "pi0",
+            "graphName": "addergraph",
+            "graphType": "simpleGraph",
+            "portName": "platform.sink[0]",
+            "qualifiedGraphPortAliasNames": [
+                "addergraph.out"
+            ],
+            "blockInstance": "i1"
+        },
+        "i2_pi0": {
+            "margin": 0,
+            "port": "pi0",
+            "graphName": "addergraph",
+            "graphType": "simpleGraph",
+            "portName": "trans1.in[0]",
+            "instanceId": 4,
+            "blockInstance": "i2",
+            "blockSize": 6144
+        },
+        "i2_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "addergraph",
+            "graphType": "simpleGraph",
+            "portName": "trans1.out[0]",
+            "instanceId": 5,
+            "blockInstance": "i2",
+            "blockSize": 6144
+        },
+        "i3_pi0": {
+            "margin": 0,
+            "port": "pi0",
+            "graphName": "addergraph",
+            "graphType": "simpleGraph",
+            "portName": "trans2.in[0]",
+            "instanceId": 6,
+            "blockInstance": "i3",
+            "blockSize": 6144
+        },
+        "i3_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "addergraph",
+            "graphType": "simpleGraph",
+            "portName": "trans2.out[0]",
+            "instanceId": 7,
+            "blockInstance": "i3",
+            "blockSize": 6144
+        }
+    },
+    "nets": {
+        "net0": {
+            "srcInstance": "i0",
+            "srcPort": "i0_po0",
+            "dstInstance": "i2",
+            "dstPort": "i2_pi0",
+            "varNames": [
+                "net0",
+                ""
+            ],
+            "locs": [
+                "aie/aie_graph.cpp:11:1",
+                "aie/aie_graph.h:22:9"
+            ]
+        },
+        "net1": {
+            "srcInstance": "i2",
+            "srcPort": "i2_po0",
+            "dstInstance": "i3",
+            "dstPort": "i3_pi0",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "aie/aie_graph.h:23:9"
+            ]
+        },
+        "net2": {
+            "srcInstance": "i3",
+            "srcPort": "i3_po0",
+            "dstInstance": "i1",
+            "dstPort": "i1_pi0",
+            "varNames": [
+                "",
+                "net1"
+            ],
+            "locs": [
+                "aie/aie_graph.h:24:9",
+                "aie/aie_graph.cpp:13:1"
+            ]
+        }
+    },
+    "debugInfo": {
+        "i0": {
+            "varName": "in0"
+        },
+        "i1": {
+            "varName": "out"
+        },
+        "i2": {
+            "varName": "trans1"
+        },
+        "i3": {
+            "varName": "trans2"
+        },
+        "i0_po0": {
+            "varName": "platform.src[0]"
+        },
+        "i1_pi0": {
+            "varName": "platform.sink[0]"
+        },
+        "i2_pi0": {
+            "varName": "trans1.in[0]"
+        },
+        "i2_po0": {
+            "varName": "trans1.out[0]"
+        },
+        "i3_pi0": {
+            "varName": "trans2.in[0]"
+        },
+        "i3_po0": {
+            "varName": "trans2.out[0]"
+        }
+    },
+    "altGraphs": [],
+    "graphFilesInfo": {
+        "headerFiles": [
+            "aie/aie_graph.h"
+        ]
+    }
+}

@@ -1,0 +1,104 @@
+{
+    "schema_version": {
+        "major": "1",
+        "minor": "0",
+        "patch": "0"
+    },
+    "aie_metadata": {
+        "driver_config": {
+            "hw_gen": 1,
+            "base_address": 2199023255552,
+            "column_shift": 23,
+            "row_shift": 18,
+            "num_rows": 9,
+            "num_columns": 50,
+            "shim_row": 0,
+            "reserved_row_start": 0,
+            "reserved_num_rows": 0,
+            "aie_tile_row_start": 1,
+            "aie_tile_num_rows": 8
+        },
+        "aiecompiler_options": {
+            "broadcast_enable_core": false
+        },
+        "graphs": {
+            "graph0": {
+                "id": 0,
+                "name": "addergraph",
+                "core_columns": [
+                    24,
+                    25
+                ],
+                "core_rows": [
+                    0,
+                    0
+                ],
+                "iteration_memory_columns": [
+                    24,
+                    25
+                ],
+                "iteration_memory_rows": [
+                    0,
+                    1
+                ],
+                "iteration_memory_addresses": [
+                    8196,
+                    4
+                ],
+                "multirate_triggers": [
+                    false,
+                    false
+                ],
+                "pl_kernel_instance_names": [],
+                "pl_axi_lite_modes": []
+            }
+        },
+        "RTPs": {},
+        "GMIOs": {},
+        "PLIOs": {
+            "plio0": {
+                "id": 0,
+                "name": "in0",
+                "logical_name": "DataIn0",
+                "shim_column": 24,
+                "slaveOrMaster": 0,
+                "stream_id": 0
+            },
+            "plio1": {
+                "id": 1,
+                "name": "out",
+                "logical_name": "DataOut",
+                "shim_column": 25,
+                "slaveOrMaster": 1,
+                "stream_id": 0
+            }
+        },
+        "EventGraphs": {
+            "graph0": {
+                "id": 0,
+                "name": "addergraph",
+                "core_columns": [
+                    24,
+                    25
+                ],
+                "core_rows": [
+                    0,
+                    0
+                ],
+                "dma_columns": [
+                    24,
+                    25
+                ],
+                "dma_rows": [
+                    1,
+                    0
+                ]
+            }
+        },
+        "DeviceData": {
+            "AIEBaseAddress": "0x20000000000",
+            "AIEFrequency": 1000
+        },
+        "TraceGMIOs": {}
+    }
+}

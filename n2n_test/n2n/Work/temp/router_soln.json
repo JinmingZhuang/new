@@ -1,0 +1,23 @@
+{
+  "net2":
+  {
+    "tree":
+    [
+      ["M_SOUTH_ch3_C25_R0", "S_SHIM_NORTH_ch3_C25"],
+      ["S_MM2S_DMA_ch0_C25_R0", "M_SOUTH_ch3_C25_R0"],
+      ["S_SHIM_NORTH_ch3_C25", "M_SHIM_SOUTH_ch0_C25"]
+    ]
+  },
+  "net0":
+  {
+    "tree":
+    [
+      ["M_NORTH_ch5_C24_R0", "S_SOUTH_ch5_C24_R1"],
+      ["M_SHIM_NORTH_ch5_C24", "S_SOUTH_ch5_C24_R0"],
+      ["S_SHIM_SOUTH_ch0_C24", "M_SHIM_NORTH_ch5_C24"],
+      ["S_SOUTH_ch5_C24_R0", "M_NORTH_ch5_C24_R0"],
+      ["S_SOUTH_ch5_C24_R1", "M_S2MM_DMA_ch0_C24_R1"]
+    ]
+  }}
+
+

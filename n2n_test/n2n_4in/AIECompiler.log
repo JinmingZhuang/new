@@ -1,0 +1,13 @@
+Version: Vitis AI Engine Compiler Release 2021.1
+Build Info: SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+Copyright(c) 2016-2020 Xilinx Inc.
+
+INFO: [aiecompiler 77-297] Cmd Line : /opt/tools/xilinx/Vitis/2021.1/aietools/bin/unwrapped/lnx64.o/aiecompiler -platform=/opt/xilinx/platforms/xilinx_vck190_base_202110_1/xilinx_vck190_base_202110_1.xpfm -include=./aie -workdir=./Work -v aie/aie_graph.cpp 
+INFO: [aiecompiler 77-349] Starting Dataflow Frontend with input 'aie/aie_graph.cpp'
+INFO: [aiecompiler 77-404] Executing Cmd: ${XILINX_VITIS_AIETOOLS}/tps/lnx64/gcc/bin/g++ -E -std=c++14 -D__ADF_FRONTEND__ -I/opt/tools/xilinx/Vitis/2021.1/aietools/include  -I .  -I ./aie -I ${XILINX_HLS}/include aie/aie_graph.cpp > ./Work/temp/aie_graph.ii
+INFO: [aiecompiler 77-404] Executing Cmd: graph_preprocessor ./Work/temp/aie_graph.ii -o ./Work/temp/aie_graph.processed.ii -report-core-dump  -- -std=c++14  -ftemplate-depth=2048  -Wno-return-stack-address  -Wno-missing-declarations  -Wno-parentheses-equality  -Wno-shift-negative-value  
+INFO: [aiecompiler 77-404] Executing Cmd: ${XILINX_VITIS_AIETOOLS}/tps/lnx64/gcc/bin/g++  -std=c++14  -I .  ./Work/temp/aie_graph.processed.ii -o ./Work/temp/aie_graph.out -L /opt/tools/xilinx/Vitis/2021.1/aietools/lib/lnx64.o -g -O0 -Wl,--unresolved-symbols=ignore-all  -Wno-return-stack-address  -Wno-missing-declarations  -lmeir_frontend  -ladf_api_frontend 
+INFO: [aiecompiler 77-404] Executing Cmd: ./Work/temp/aie_graph.out -I ./aie -workdir=./Work -aiearch=aie -log-level=1 --pl-axi-lite=0
+ERROR: [aiecompiler 77-753] This application has discovered an exceptional condition from which it cannot recover while executing the following command
+  >> ./Work/temp/aie_graph.out -I ./aie -workdir=./Work -aiearch=aie -log-level=1 --pl-axi-lite=0.
+Please check the output log for errors and fix those before you run the application.

@@ -1,0 +1,26 @@
+13:41:19.999921 [   info] @  -nan / aiesimulator.set_simulation_flags       : Set work_dir to: aiesimulator_output
+13:41:20.000945 [   info] @  -nan / aiesimulator.set_simulation_flags       : Set pkg_dir to: ./Work
+13:41:20.000977 [   info] @  -nan / aiesimulator.set_simulation_flags       : Set ess_debug to: 0
+13:41:20.000998 [   info] @  -nan / aiesimulator.set_simulation_flags       : Set debug_axi_mm to: false
+13:41:20.001025 [   info] @  -nan / aiesimulator.set_simulation_flags       : profile data for cores: All
+13:41:20.001047 [   info] @  -nan / aiesimulator.set_simulation_flags       : Simumation End wait time: 10
+13:41:20.001229 [   info] @  -nan / aiesimulator.set_aiearch_version        : Set ARCH to: aie
+13:41:20.001350 [   info] @  -nan / aiesimulator.device_cfg_init            : Loading device config from: /opt/tools/xilinx/Vitis/2021.1/aietools/data/devices/VC1902.json
+13:41:20.040076 [   info] @  -nan / aiesimulator.read_aiesim_config_json    : Set physical device to: xcvc1902-vsva2197-2MP-e-S
+13:41:20.040114 [   info] @  -nan / aiesimulator.read_aiesim_config_json    : AIE Frequencey: 1e+09
+13:41:20.055545 [   info] @  -nan / tl.pl.ip_modules_0.IPModule             : Loading IP lib: /opt/tools/xilinx/Vitis/2021.1/aietools/data/pl_fileio/libpl_sender.so
+13:41:20.056493 [   info] @  -nan / tl.pl.ip_modules_1.IPModule             : Loading IP lib: /opt/tools/xilinx/Vitis/2021.1/aietools/data/pl_fileio/libpl_receiver.so
+13:41:20.057968 [   info] @  -nan / tl.pl.ip_modules_2.IPModule             : Loading IP lib: ./Work/ps/c_rts/systemC/generated-objects/ps_i4.so
+13:41:20.065257 [   info] @  -nan / tl.pl.ProgrammableLogic                 : PL IP block has 32-bit output fifo (do)
+13:41:20.065318 [   info] @  -nan / tl.pl.ProgrammableLogic                 : Conneced IP i0 do(32bit out) to ME stream 192.
+13:41:20.065329 [   info] @  -nan / tl.pl.ProgrammableLogic                 : PL IP block has 32-bit input fifo (di)
+13:41:20.065369 [   info] @  -nan / tl.pl.ProgrammableLogic                 : Connected ME stream 150 to IP i1 di(32bit in).
+13:41:34.713215 [   info] @     0 / main.sc_main                            : About to sc_start ess
+13:41:34.713297 [   info] @     0 / aiesimulator.me_iss_start               : ISS start... 
+13:41:36.673542 [   info] @     0 / load_symbols.ess_WriteCmd               : Loading ./Work/aie/24_0/Release/24_0 to ::tl.aie_logical.aie_xtlm.math_engine.array.tile_24_1.cm.proc.iss
+13:41:37.423691 [   info] @     0 / load_symbols.ess_WriteCmd               : Loading ./Work/aie/25_0/Release/25_0 to ::tl.aie_logical.aie_xtlm.math_engine.array.tile_25_1.cm.proc.iss
+13:42:46.178849 [   info] @ 57708 / request_profiles.request_profiles       : Storing profiles.
+13:42:46.200058 [   info] @ 57727 / request_profiles.request_profiles       : Storing profiles.
+13:42:46.227517 [  trace] @ 57751 / main.commandline_thread_process         : End of commandline parser run.
+13:42:46.534672 [   info] @ 57751 / main.sc_main                            : Simulation finished.
+13:43:54.691982 [   info] @ 57751 / main.final_cleanup                      :  Sim result: 0

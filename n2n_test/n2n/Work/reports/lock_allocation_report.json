@@ -1,0 +1,80 @@
+{
+    "PortsWithLock": [
+        {
+            "QualifiedGraphName": "addergraph",
+            "VariableName": "addergraph.trans1",
+            "Ports": [
+                {
+                    "Port": "i2_pi0",
+                    "PortName": "addergraph.trans1.in[0]",
+                    "Locks": [
+                        {
+                            "BufferName": "buf0",
+                            "LockID": 0,
+                            "LockName": "LOCK_24_1_0_0"
+                        },
+                        {
+                            "BufferName": "buf0d",
+                            "LockID": 1,
+                            "LockName": "LOCK_24_1_1_0"
+                        }
+                    ]
+                },
+                {
+                    "Port": "i2_po0",
+                    "PortName": "addergraph.trans1.out[0]",
+                    "Locks": [
+                        {
+                            "BufferName": "buf1",
+                            "LockID": 0,
+                            "LockName": "LOCK_24_0_0_0"
+                        },
+                        {
+                            "BufferName": "buf1d",
+                            "LockID": 1,
+                            "LockName": "LOCK_24_0_1_0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "QualifiedGraphName": "addergraph",
+            "VariableName": "addergraph.trans2",
+            "Ports": [
+                {
+                    "Port": "i3_pi0",
+                    "PortName": "addergraph.trans2.in[0]",
+                    "Locks": [
+                        {
+                            "BufferName": "buf1",
+                            "LockID": 0,
+                            "LockName": "LOCK_24_0_0_0"
+                        },
+                        {
+                            "BufferName": "buf1d",
+                            "LockID": 1,
+                            "LockName": "LOCK_24_0_1_0"
+                        }
+                    ]
+                },
+                {
+                    "Port": "i3_po0",
+                    "PortName": "addergraph.trans2.out[0]",
+                    "Locks": [
+                        {
+                            "BufferName": "buf2",
+                            "LockID": 0,
+                            "LockName": "LOCK_25_0_0_0"
+                        },
+                        {
+                            "BufferName": "buf2d",
+                            "LockID": 1,
+                            "LockName": "LOCK_25_0_1_2048"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

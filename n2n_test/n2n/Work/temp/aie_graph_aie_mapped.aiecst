@@ -1,0 +1,96 @@
+{
+  "NodeConstraints": {
+    "DataIn0": {
+      "shim": {
+        "column": 24,
+        "channel": 0
+      }
+    },
+    "DataOut": {
+      "shim": {
+        "column": 25,
+        "channel": 0
+      }
+    },
+    "addergraph.trans1": {
+      "tile": {
+        "column": 24,
+        "row": 0,
+        "tile_type": "core"
+      },
+      "reserved_memory": {
+        "column": 24,
+        "row": 0,
+        "bankId": 1,
+        "offset": 0
+      }
+    },
+    "addergraph.trans2": {
+      "tile": {
+        "column": 25,
+        "row": 0,
+        "tile_type": "core"
+      },
+      "reserved_memory": {
+        "column": 25,
+        "row": 1,
+        "bankId": 0,
+        "offset": 0
+      }
+    }
+  },
+  "PortConstraints": {
+    "addergraph.trans1.in[0]": {
+      "buffers": [{
+          "column": 24,
+          "row": 1,
+          "bankId": 0,
+          "offset": 0
+        }, {
+          "column": 24,
+          "row": 1,
+          "bankId": 1,
+          "offset": 0
+        }]
+    },
+    "addergraph.trans1.out[0]": {
+      "buffers": [{
+          "column": 24,
+          "row": 0,
+          "bankId": 0,
+          "offset": 0
+        }, {
+          "column": 24,
+          "row": 0,
+          "bankId": 2,
+          "offset": 0
+        }]
+    },
+    "addergraph.trans2.in[0]": {
+      "buffers": [{
+          "column": 24,
+          "row": 0,
+          "bankId": 0,
+          "offset": 0
+        }, {
+          "column": 24,
+          "row": 0,
+          "bankId": 2,
+          "offset": 0
+        }]
+    },
+    "addergraph.trans2.out[0]": {
+      "buffers": [{
+          "column": 25,
+          "row": 0,
+          "bankId": 2,
+          "offset": 0
+        }, {
+          "column": 25,
+          "row": 0,
+          "bankId": 0,
+          "offset": 2048
+        }]
+    }
+  }
+}

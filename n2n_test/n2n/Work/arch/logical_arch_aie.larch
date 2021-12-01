@@ -1,0 +1,63 @@
+{
+  "appId": "root",
+  "device": "xcvc1902",
+  "AIE": {
+    "ai_engine_0": {
+      "annotation": "AIE IP",
+      "logical_device": "${XILINX_VITIS_AIETOOLS}/data/devices/VC1902.json",
+      "aieshimPorts": {
+        "S00_AXIS": {
+          "type": "stream",
+          "direction": "slave",
+          "dataWidth": 16,
+          "busWidth": 32,
+          "parameterIndex": 0,
+          "clkFreq": 312.5,
+          "registeredInterface": true,
+          "traceFile": "data/input0.txt",
+          "annotation": [
+            "DataIn0"
+          ],
+          "sdfioName": [
+            "i0_po0"
+          ]
+        },
+        "M00_AXIS": {
+          "type": "stream",
+          "direction": "master",
+          "dataWidth": 16,
+          "busWidth": 32,
+          "parameterIndex": 0,
+          "clkFreq": 312.5,
+          "registeredInterface": true,
+          "traceFile": "data/output.txt",
+          "annotation": [
+            "DataOut"
+          ],
+          "sdfioName": [
+            "i1_pi0"
+          ]
+        }
+      }
+    }
+  },
+  "connections": {
+    "net0": {
+      "dstPorts": [
+        {
+          "instName": "ai_engine_0",
+          "portName": "S00_AXIS"
+        }
+      ],
+      "direction": "pl_to_aie"
+    },
+    "net2": {
+      "type": "stream",
+      "srcPort": {
+        "instName": "ai_engine_0",
+        "portName": "M00_AXIS"
+      },
+      "direction": "aie_to_pl"
+    }
+  }
+}

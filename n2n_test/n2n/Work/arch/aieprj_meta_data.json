@@ -1,0 +1,12 @@
+{
+  "MetaData": [
+    {
+      "name": "AIE_PL_INTF_ID",
+      "value": 5608
+    },
+    {
+      "name": "AIE_PL_INTF_ID_STR",
+      "value": "DataIn0AIE_PL_X23Y0_AIE_PL_S_AXIS_0DataOutAIE_PL_X24Y0_AIE_PL_M_AXIS_0"
+    }
+  ]
+}
